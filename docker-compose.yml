@@ -1,0 +1,7 @@
+version: '2'
+services:
+  mongodb:
+    image: mongo:3.7
+    command: mongod --smallfiles --quiet --logpath=/dev/null
+    ports:
+      - '27017:27017'
